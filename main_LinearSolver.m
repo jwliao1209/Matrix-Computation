@@ -7,3 +7,6 @@ b = rand(n, 1);
 
 % Direct Method
 x = GaussianElimination(A, b);
+
+error = RelativeError(x, A\b);
+fprintf('Relative error is %e.\n\n', error);
